@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour //more like out of control, am i right gamers?
 {
     public float jumpForce;
-    public float moveForce;
+    public float moveSpeed;
+    public float extra = 0.1f;
 
     public bool WASD = true;
     public bool WEnabled = true;
@@ -13,12 +14,13 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     public bool DEnabled = true;
     public bool ShootEnabled = true;
 
-    private bool WPressed;
-    private bool APressed;
-    private bool DPressed;
+    public bool WPressed;
+    public bool APressed;
+    public bool DPressed;
 
     private Rigidbody2D rb;
     public GroundDetection gd;
+    private float movement;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,42 +32,49 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         WPressed = Input.GetKeyDown(KeyCode.W);
         APressed = Input.GetKeyDown(KeyCode.A);
         DPressed = Input.GetKeyDown(KeyCode.D);
-    }
+        /*
+        if (WPressed)
+            Debug.Log("w");
+        if (APressed)
+            Debug.Log("a");
+        if (DPressed)
+            Debug.Log("d");
+            */
 
-    private void FixedUpdate()
-    {
+
+        movement = Input.GetAxis("Horizontal");
         if (WASD)
         {
             if (WEnabled && WPressed)
             {
                 Jump();
             }
-            if (AEnabled && APressed)
-            {
-                MoveLeft();
-            }
-            if (DEnabled && DPressed)
-            {
-                MoveRight();
-            }
         }
-        
+    }
+
+    private void FixedUpdate()
+    {
+        if (movement != 0)
+        {
+            rb.velocity = new Vector2(movement * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
     }
 
     private void Jump()
     {
-        if(gd.onGround && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
+        Debug.Log("jump check 1" + IsGrounded());
+        if (IsGrounded() && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
+        {
+            Debug.Log("Jump check 2");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
     }
-
-    private void MoveLeft()
+    bool IsGrounded()
     {
-        rb.AddForce(new Vector2(-moveForce, 0f));
+        return Physics2D.Raycast(GetComponent<BoxCollider2D>().bounds.center, Vector2.down, GetComponent<BoxCollider2D>().bounds.extents.y + extra, LayerMask.GetMask("Ground"));
     }
-
-    private void MoveRight()
-    {
-        rb.AddForce(new Vector2(moveForce, 0f));
-    }
-    
 }
