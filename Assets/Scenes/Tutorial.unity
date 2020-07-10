@@ -1464,11 +1464,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.014585517
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079446928020516065, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.32
+      objectReference: {fileID: 0}
     - target: {fileID: 8023492299827259060, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
         type: 3}
       propertyPath: m_Name
       value: pixel
       objectReference: {fileID: 0}
+    - target: {fileID: 8023492299827259080, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3680837050398524499, guid: b96ea3e787c73ad4c9de9d5ea53e7587,
+        type: 3}
     - target: {fileID: 8023492299827259082, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -1533,6 +1569,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023492299827259087, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023492299827259087, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15b859af40cd43f4fbdbe9544c7e2fb3, type: 3}
