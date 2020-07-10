@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2179503462892386272}
   - component: {fileID: 3020644661765579648}
   - component: {fileID: 4492700764999563158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: OneWayTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}

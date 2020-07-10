@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1060001018232474802}
   - component: {fileID: 1858479803646281713}
   - component: {fileID: 5119816478062350522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SolidGroundTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
