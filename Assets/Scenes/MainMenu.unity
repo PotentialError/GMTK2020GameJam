@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba9a0c25e2e82469acbc192627932b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 0}
 --- !u!1001 &284960550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,6 +300,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 295251616257804621, guid: 11b6e0558adb83346a103059ac401df5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 295251616313057784, guid: 11b6e0558adb83346a103059ac401df5,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295251616313057784, guid: 11b6e0558adb83346a103059ac401df5,
+        type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11b6e0558adb83346a103059ac401df5, type: 3}
@@ -492,6 +508,7 @@ GameObject:
   - component: {fileID: 777481580}
   - component: {fileID: 777481579}
   - component: {fileID: 777481581}
+  - component: {fileID: 777481582}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -577,6 +594,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &777481582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777481577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ba9a0c25e2e82469acbc192627932b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 1471236787}
+--- !u!1 &1471236787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 295251616313057669, guid: 11b6e0558adb83346a103059ac401df5,
+    type: 3}
+  m_PrefabInstance: {fileID: 284960550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1669680921
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +693,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1669680924}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 777481582}
+        m_MethodName: StartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1669680924
 MonoBehaviour:
   m_ObjectHideFlags: 0

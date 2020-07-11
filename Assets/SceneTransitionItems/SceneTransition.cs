@@ -10,7 +10,6 @@ public class SceneTransition : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-        GlobalData.RespawnPosition = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -24,6 +23,7 @@ public class SceneTransition : MonoBehaviour
     IEnumerator LoadLevel(int level)
     {
         transition.SetTrigger("EndScene");
+        GlobalData.RespawnPosition = new Vector3(0, 0, 0);
         yield return new WaitForSecondsRealtime(3f);
         SceneManager.LoadScene(level);
     }
