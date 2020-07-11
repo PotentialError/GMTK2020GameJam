@@ -9,16 +9,20 @@ public class ElevatorMovement : MonoBehaviour
     public Vector2 target;
     public float startTransition;
     public GameObject transition;
+    private bool isDetected;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isDetected = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.up * speed * Time.deltaTime;
+        if(isDetected)
+        {
+            transform.position += Vector3.up * speed * Time.deltaTime;
+        }
         if (transform.position.y >= startTransition)
         {
             transition.GetComponent<SceneTransition>().LoadNextLevel(1);
@@ -29,7 +33,7 @@ public class ElevatorMovement : MonoBehaviour
         if(collision.tag == "Player")
         {
             Destroy(collision.gameObject);
-            
+            isDetected = true;
         }
     }
 }
