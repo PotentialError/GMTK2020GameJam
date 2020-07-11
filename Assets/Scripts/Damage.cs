@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class spike_injure : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class Damage : MonoBehaviour
 {
-    public int layer = 8;
+    public int Spikelayer = 8;
     
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,11 @@ public class spike_injure : MonoBehaviour
     {
 
     }
-    private void OnCollisionEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == layer)
+        if (collision.gameObject.layer == Spikelayer)
         {
-            transform.position = GlobalData.RespawnPosition;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
