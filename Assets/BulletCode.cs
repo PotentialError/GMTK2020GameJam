@@ -25,6 +25,10 @@ public class BulletCode : MonoBehaviour
         if (collision.gameObject.layer==11)
         {
             collision.gameObject.GetComponent<DamageEnemy>().damageEnemy(1);
+            
+        }
+        if(collision.tag != "Player")
+        {
             Destroy(this.gameObject);
         }
 
