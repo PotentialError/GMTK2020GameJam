@@ -18,7 +18,7 @@ public class LaserScript : MonoBehaviour
 
     IEnumerator StopLaser()
     {
-        yield return new WaitForSeconds(0.125f);
+        yield return new WaitForSeconds(3f);
         Destroy(gameObject);
     }
 }
