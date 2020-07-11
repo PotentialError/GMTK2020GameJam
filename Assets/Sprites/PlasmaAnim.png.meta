@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-guid: 9ab35c97075f4f343a426a28b3c9e9f6
+guid: 3feaed741468fb04c9a84d79fa2db722
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6100934469305251410
-    second: PlasmaAnim_0
-  - first:
-      213: -4755470370699645818
-    second: PlasmaAnim_1
-  - first:
-      213: 7055301805385399519
-    second: PlasmaAnim_2
-  - first:
-      213: -6113271314316466578
-    second: PlasmaAnim_3
-  - first:
-      213: 4668506941016564126
-    second: PlasmaAnim_4
-  - first:
-      213: 544403332678827607
-    second: PlasmaAnim_5
-  - first:
-      213: -1879528326461236425
-    second: PlasmaAnim_6
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -61,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -85,31 +64,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,154 +73,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: PlasmaAnim_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea9cf1f9c60255ba0800000000000000
-      internalID: -6100934469305251410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68c6d86b4ec210eb0800000000000000
-      internalID: -4755470370699645818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdc3b258c9779e160800000000000000
-      internalID: 7055301805385399519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e66e49e012c492ba0800000000000000
-      internalID: -6113271314316466578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e91ecbaf35ed9c040800000000000000
-      internalID: 4668506941016564126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75e3cda52fb1e8700800000000000000
-      internalID: 544403332678827607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlasmaAnim_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73b5efbf1f29ae5e0800000000000000
-      internalID: -1879528326461236425
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
