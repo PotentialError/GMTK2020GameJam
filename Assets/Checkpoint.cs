@@ -9,7 +9,16 @@ public class Checkpoint : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            GlobalData.RespawnPosition = spawnPoint.position;
+            if(GlobalData.checkPointAmount > 2)
+            {
+                GlobalData.RespawnPosition = spawnPoint.position;
+                GlobalData.checkPointAmount = 0;
+            }
+            else
+            {
+                GlobalData.RespawnPosition = transform.position;
+                GlobalData.checkPointAmount++;
+            }
             GetComponent<Animator>().SetTrigger("checkPoint");
         }
     }
