@@ -6,7 +6,6 @@ public class ElevatorMovement : MonoBehaviour
 {
     public float distanceUp;
     public float speed;
-    public Vector2 target;
     public float startTransition;
     public GameObject transition;
     private bool isDetected;
