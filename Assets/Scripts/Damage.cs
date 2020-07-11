@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 public class Damage : MonoBehaviour
 {
     public int Spikelayer = 8;
-    
+    public int Enemylayer = 11;
+
+    public GameObject deathEffects;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,19 @@ public class Damage : MonoBehaviour
     {
         if (collision.gameObject.layer == Spikelayer)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StartCoroutine(death());
         }
+        if(collision.gameObject.layer == Enemylayer)
+        {
+            StartCoroutine(death());
+        }
+    }
+
+    IEnumerator death()
+    {
+        Instantiate(deathEffects, transform.position, deathEffects.transform.rotation);
+        transform.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(0.25f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
