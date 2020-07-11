@@ -48,13 +48,29 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
 
 
         movement = Input.GetAxisRaw("Horizontal");
-        if (movement != 0)
+        if (isGrounded && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
         {
-            anim.SetBool("isRunning", true);
+            anim.SetBool("isLanded", true);
+            if (movement != 0)
+            {
+                anim.SetBool("isRunning", true);
+            }
+            else
+            {
+                anim.SetBool("isRunning", false);
+            }
         }
         else
         {
-            anim.SetBool("isRunning", false);
+            anim.SetBool("isLanded", false);
+        }
+        if(rb.velocity.y < -0.5f)
+        {
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            anim.SetBool("isFalling", false);
         }
         if (WASD)
         {
@@ -83,6 +99,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         if (isGrounded && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
         {
             Debug.Log("Jump check 2");
+            anim.SetTrigger("Jump");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
