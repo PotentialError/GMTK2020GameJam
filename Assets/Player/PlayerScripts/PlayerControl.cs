@@ -23,11 +23,13 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     private float movement;
 
     public bool isGrounded = false;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         transform.position = GlobalData.RespawnPosition;
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -46,6 +48,14 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
 
 
         movement = Input.GetAxisRaw("Horizontal");
+        if (movement != 0)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
         if (WASD)
         {
             if (WEnabled && WPressed)
