@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: 3500105210299226764
     second: BestRoboWalk_7
+  - first:
+      213: -6637757753856832490
+    second: BestRoboWalk_0
+  - first:
+      213: 6029285742966864208
+    second: BestRoboWalk_1
+  - first:
+      213: 191033042580364976
+    second: BestRoboWalk_2
+  - first:
+      213: -5310886740442363808
+    second: BestRoboWalk_3
+  - first:
+      213: 6328418095621494450
+    second: BestRoboWalk_4
+  - first:
+      213: -3735873119179873266
+    second: BestRoboWalk_5
+  - first:
+      213: -4464628025862395409
+    second: BestRoboWalk_6
+  - first:
+      213: 8217786134753789944
+    second: BestRoboWalk_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,8 +150,8 @@ TextureImporter:
       name: BestRoboWalk_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 266
+        x: 11
+        y: 296
         width: 20
         height: 38
       alignment: 0
@@ -137,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86f1aa01e2b618260800000000000000
-      internalID: 7098072333304864616
+      spriteID: 61cc440cd72f1e3a0800000000000000
+      internalID: -6637757753856832490
       vertices: []
       indices: 
       edges: []
@@ -147,8 +171,8 @@ TextureImporter:
       name: BestRoboWalk_1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 228
+        x: 11
+        y: 254
         width: 20
         height: 38
       alignment: 0
@@ -158,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 807b0d80771492b10800000000000000
-      internalID: 1957167492574000904
+      spriteID: 059fdde40735ca350800000000000000
+      internalID: 6029285742966864208
       vertices: []
       indices: 
       edges: []
@@ -168,8 +192,8 @@ TextureImporter:
       name: BestRoboWalk_2
       rect:
         serializedVersion: 2
-        x: 9
-        y: 190
+        x: 11
+        y: 212
         width: 20
         height: 38
       alignment: 0
@@ -179,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4b8139da908c970800000000000000
-      internalID: 8775274515033273538
+      spriteID: 0be5d534a8fa6a200800000000000000
+      internalID: 191033042580364976
       vertices: []
       indices: 
       edges: []
@@ -189,8 +213,8 @@ TextureImporter:
       name: BestRoboWalk_3
       rect:
         serializedVersion: 2
-        x: 9
-        y: 152
+        x: 11
+        y: 170
         width: 20
         height: 38
       alignment: 0
@@ -200,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa8581031d184820800000000000000
-      internalID: 2902601927307397795
+      spriteID: 068c999d5a0fb46b0800000000000000
+      internalID: -5310886740442363808
       vertices: []
       indices: 
       edges: []
@@ -210,8 +234,8 @@ TextureImporter:
       name: BestRoboWalk_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 114
+        x: 11
+        y: 128
         width: 20
         height: 38
       alignment: 0
@@ -221,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cac26e4f2a649d80800000000000000
-      internalID: -8244848266397431100
+      spriteID: 2b65ca38abe03d750800000000000000
+      internalID: 6328418095621494450
       vertices: []
       indices: 
       edges: []
@@ -231,8 +255,8 @@ TextureImporter:
       name: BestRoboWalk_5
       rect:
         serializedVersion: 2
-        x: 9
-        y: 76
+        x: 11
+        y: 86
         width: 20
         height: 38
       alignment: 0
@@ -242,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b111d0b7b72ed34f0800000000000000
-      internalID: -847272134902476517
+      spriteID: e046a5d0133872cc0800000000000000
+      internalID: -3735873119179873266
       vertices: []
       indices: 
       edges: []
@@ -252,8 +276,8 @@ TextureImporter:
       name: BestRoboWalk_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 38
+        x: 11
+        y: 44
         width: 20
         height: 38
       alignment: 0
@@ -263,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b28b86399cde064a0800000000000000
-      internalID: -6602015603707824085
+      spriteID: fe9e73017747a02c0800000000000000
+      internalID: -4464628025862395409
       vertices: []
       indices: 
       edges: []
@@ -273,8 +297,8 @@ TextureImporter:
       name: BestRoboWalk_7
       rect:
         serializedVersion: 2
-        x: 9
-        y: 0
+        x: 11
+        y: 2
         width: 20
         height: 38
       alignment: 0
@@ -284,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8a1168f42fd29030800000000000000
-      internalID: 3500105210299226764
+      spriteID: 8f7412a23f07b0270800000000000000
+      internalID: 8217786134753789944
       vertices: []
       indices: 
       edges: []
