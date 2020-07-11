@@ -21,10 +21,15 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     private Rigidbody2D rb;
     public GroundDetection gd;
     private float movement;
+
+    public bool isGrounded = false;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        transform.position = GlobalData.RespawnPosition;
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -43,6 +48,14 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
 
 
         movement = Input.GetAxisRaw("Horizontal");
+        if (movement != 0)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
         if (WASD)
         {
             if (WEnabled && WPressed)
@@ -67,7 +80,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     private void Jump()
     {
         Debug.Log("jump check 1" + IsGrounded());
-        if (IsGrounded() && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
+        if (isGrounded && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
         {
             Debug.Log("Jump check 2");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
