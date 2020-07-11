@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 7a30b6b88634fa94e81b7dbba47d5ac4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2140255562502287283
+    second: Jumping Animation_0
+  - first:
+      213: -390683260952072973
+    second: Jumping Animation_1
+  - first:
+      213: -8192058161320946500
+    second: Jumping Animation_2
+  - first:
+      213: -3026592575939552691
+    second: Jumping Animation_3
+  - first:
+      213: 4342140023988919881
+    second: Jumping Animation_4
+  - first:
+      213: 7435466469005359501
+    second: Jumping Animation_5
+  - first:
+      213: 5004654297144007302
+    second: Jumping Animation_6
+  - first:
+      213: 2696009334594171733
+    second: Jumping Animation_7
+  - first:
+      213: 7416205744418756750
+    second: Jumping Animation_8
+  - first:
+      213: -6794123045095423686
+    second: Jumping Animation_9
+  - first:
+      213: 423429757300693045
+    second: Jumping Animation_10
+  - first:
+      213: 5163990263453302829
+    second: Jumping Animation_11
+  - first:
+      213: -1782009950684108857
+    second: Jumping Animation_12
+  - first:
+      213: -7454047044852940609
+    second: Jumping Animation_13
+  - first:
+      213: 5097839774504536570
+    second: Jumping Animation_14
+  - first:
+      213: 4038796002441017631
+    second: Jumping Animation_15
+  - first:
+      213: -2750736787947504823
+    second: Jumping Animation_16
+  - first:
+      213: 1159562279945262244
+    second: Jumping Animation_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +94,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 38
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +118,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +151,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jumping Animation_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 339
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fca243e4a3049af0800000000000000
+      internalID: -390683260952072973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 297
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ad94776126ff5d0800000000000000
+      internalID: -3026592575939552691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 255
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d897468db55103760800000000000000
+      internalID: 7435466469005359501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 213
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5537f9ba4362a6520800000000000000
+      internalID: 2696009334594171733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 171
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31cac8561d66b1a0800000000000000
+      internalID: -6794123045095423686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 129
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20c5bcd8cd2aa740800000000000000
+      internalID: 5163990263453302829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 87
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb08d78b4b7ed8890800000000000000
+      internalID: -7454047044852940609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_15
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 45
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19b3c5d09fac0830800000000000000
+      internalID: 4038796002441017631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping Animation_17
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4541fffb7971010800000000000000
+      internalID: 1159562279945262244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
