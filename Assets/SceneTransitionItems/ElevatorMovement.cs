@@ -10,6 +10,7 @@ public class ElevatorMovement : MonoBehaviour
     public float startTransition;
     public GameObject transition;
     private bool isDetected;
+    public float elevatorTime = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,13 @@ public class ElevatorMovement : MonoBehaviour
         if(collision.tag == "Player")
         {
             Destroy(collision.gameObject);
-            isDetected = true;
+            StartCoroutine(timer());
+            GetComponent<Animator>().SetTrigger("PlayerIn");
         }
+    }
+    IEnumerator timer()
+    {
+        yield return new WaitForSeconds(elevatorTime);
+        isDetected = true;
     }
 }
