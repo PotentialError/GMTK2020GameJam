@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PalletteSpriteSpike
+  m_Name: PalletteLeftPlatform
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 6723963429988506304, guid: 460946202f067d041b773f4c6e5e841e,
+  m_Sprite: {fileID: -154932872365438541, guid: fa66d37548e486548b26c82d2eed5098,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
