@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GroundDetection : MonoBehaviour
 {
-    public bool onGround = true;
+    public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
-            onGround = true;
+            player.GetComponent<PlayerControl>().isGrounded = true;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
-            onGround = false;
+            player.GetComponent<PlayerControl>().isGrounded = false;
     }
 }

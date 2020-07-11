@@ -26,7 +26,7 @@ public class ElevatorMovement : MonoBehaviour
         }
         if (transform.position.y >= startTransition)
         {
-            transition.GetComponent<SceneTransition>().LoadNextLevel(1);
+            transition.GetComponent<SceneTransition>().LoadNextLevel(2);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
