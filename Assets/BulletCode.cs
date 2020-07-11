@@ -22,9 +22,10 @@ public class BulletCode : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Player")
+        if (collision.gameObject.layer==11)
         {
-            Destroy(gameObject);
+            collision.gameObject.GetComponent<DamageEnemy>().damageEnemy(1);
+            Destroy(this.gameObject);
         }
 
     }
