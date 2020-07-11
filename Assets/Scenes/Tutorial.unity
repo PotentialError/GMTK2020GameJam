@@ -11612,6 +11612,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1897291325, guid: 15b859af40cd43f4fbdbe9544c7e2fb3, type: 3}
+      propertyPath: deathEffects
+      value: 
+      objectReference: {fileID: 82711709144547339, guid: e44d8ab358638c845a73202d4d6ae714,
+        type: 3}
     - target: {fileID: 8023492299827259060, guid: 15b859af40cd43f4fbdbe9544c7e2fb3,
         type: 3}
       propertyPath: m_Name
