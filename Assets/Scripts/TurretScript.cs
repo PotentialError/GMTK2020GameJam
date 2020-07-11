@@ -39,7 +39,8 @@ public class TurretScript : MonoBehaviour
         RaycastHit2D detect = Physics2D.Raycast(firePoint.position, firePoint.TransformDirection(Vector2.left), laserDist, LayerMask.GetMask("Player"));
         
         GameObject laserInstance = Instantiate(laser, firePoint.position, laser.transform.rotation);
-        laserInstance.transform.localScale=new Vector3(detect.distance*100+50,30,1);
+        laserInstance.transform.localScale = new Vector3(detect.distance*100+75,30,1);
+        laserInstance.transform.position -= new Vector3(detect.distance /2+0.375f, 0, 0);
         StartCoroutine(Reload());
     }
 

@@ -108,8 +108,8 @@ TextureImporter:
       name: Idle Animation_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 38
+        x: 10
+        y: 44
         width: 20
         height: 38
       alignment: 0
@@ -129,8 +129,8 @@ TextureImporter:
       name: Idle Animation_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
+        x: 10
+        y: 2
         width: 20
         height: 38
       alignment: 0
