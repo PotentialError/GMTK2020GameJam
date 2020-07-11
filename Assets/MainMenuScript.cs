@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public GameObject transition;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class MainMenuScript : MonoBehaviour
         
     }
     public void StartButton(){
-        //Code for start button here, Mike has to do Scene change.
+        transition.GetComponent<SceneTransition>().LoadNextLevel(1);
     }
     public void OptionsButton(){
         //Dont have options menu yet. Will Do Later

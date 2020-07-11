@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 78acee0623230264eb9f136dd9ad48f9
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 578454482167468107
+    second: Checkpoint_Terminal_0
+  - first:
+      213: -2463661387839213936
+    second: Checkpoint_Terminal_1
+  - first:
+      213: 3745061777416666162
+    second: Checkpoint_Terminal_2
+  - first:
+      213: -5690913933378772660
+    second: Checkpoint_Terminal_3
+  - first:
+      213: 4038286129928621199
+    second: Checkpoint_Terminal_4
+  - first:
+      213: -4335993462477122061
+    second: Checkpoint_Terminal_5
+  - first:
+      213: 1016144442721440562
+    second: Checkpoint_Terminal_6
+  - first:
+      213: -6465991505987429318
+    second: Checkpoint_Terminal_7
+  - first:
+      213: 1740273478870110928
+    second: Checkpoint_Terminal_8
+  - first:
+      213: -7897872954066776728
+    second: Checkpoint_Terminal_9
+  - first:
+      213: -4059627906915677230
+    second: Checkpoint_Terminal_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +73,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +97,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +130,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 219
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4013586945170800800000000000000
+      internalID: 578454482167468107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 219
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e6ff255015fcdd0800000000000000
+      internalID: -2463661387839213936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 219
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c30d828d129f330800000000000000
+      internalID: 3745061777416666162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 155
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4123a9edefc501b0800000000000000
+      internalID: -5690913933378772660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 155
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c48c3e6dfda0830800000000000000
+      internalID: 4038286129928621199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 155
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f592a04be473d3c0800000000000000
+      internalID: -4335993462477122061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 91
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23316e4acf11a1e00800000000000000
+      internalID: 1016144442721440562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 91
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c1deccbfe2446a0800000000000000
+      internalID: -6465991505987429318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 91
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d216183281b62810800000000000000
+      internalID: 1740273478870110928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 27
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d4fab946e156290800000000000000
+      internalID: -7897872954066776728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Checkpoint_Terminal_10
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 27
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db47007ded49a7c0800000000000000
+      internalID: -4059627906915677230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
