@@ -5,4 +5,5 @@ using UnityEngine;
 public static class GlobalData
 {
     public static Vector3 RespawnPosition { get; set; }
+    public static int checkPointAmount { get; set; }
 }

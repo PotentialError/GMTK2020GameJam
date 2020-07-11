@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public GameObject transition;
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
+    public AudioMixer AudioMixer;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +21,18 @@ public class MainMenuScript : MonoBehaviour
         
     }
     public void StartButton(){
-        //Code for start button here, Mike has to do Scene change.
+        transition.GetComponent<SceneTransition>().LoadNextLevel(1);
     }
     public void OptionsButton(){
-        //Dont have options menu yet. Will Do Later
+       mainMenu.SetActive(false);
+       optionsMenu.SetActive(true);
+    }
+    public void BackButton(){
+        mainMenu.SetActive(true);
+       optionsMenu.SetActive(false);
+    }
+    public void AudioSlider(float volume){
+        
+        AudioMixer.SetFloat("MasterVol",Mathf.Log10(volume)*20);
     }
 }

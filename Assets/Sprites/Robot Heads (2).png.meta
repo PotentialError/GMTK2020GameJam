@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6d520ca3ac594c04bb32d00237691e15
+guid: 6dc7a3574c8aa6b4fbf99a0523adfb48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8986636630142974624
-    second: FloatingPlatformRight_0
+      213: 937115625556025940
+    second: Robot Heads (2)_0
+  - first:
+      213: -1401379669432284649
+    second: Robot Heads (2)_1
+  - first:
+      213: 5754122459850773561
+    second: Robot Heads (2)_2
+  - first:
+      213: -1387905026989969123
+    second: Robot Heads (2)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -48,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 19
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,13 +111,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FloatingPlatformRight_0
+      name: Robot Heads (2)_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 34
-        width: 19
-        height: 9
+        x: 0
+        y: 768
+        width: 528
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +125,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06580de199d094380800000000000000
-      internalID: -8986636630142974624
+      spriteID: 4522cb642bd410d00800000000000000
+      internalID: 937115625556025940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Heads (2)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 528
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ac8009d9c4d8ce0800000000000000
+      internalID: -1401379669432284649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Heads (2)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 528
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934908df3efbadf40800000000000000
+      internalID: 5754122459850773561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Robot Heads (2)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 528
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11b84c3bbb2dbce0800000000000000
+      internalID: -1387905026989969123
       vertices: []
       indices: 
       edges: []
