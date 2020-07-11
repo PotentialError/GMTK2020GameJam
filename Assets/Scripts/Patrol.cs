@@ -53,15 +53,5 @@ public class Patrol : MonoBehaviour
             currentSpeed = 0;
             currentTime -= Time.deltaTime;
         }
-        if (health <= 0)
-        {
-            Instantiate(explosion, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
-    }
-    public void damage(float damageAmount)
-    {
-        currentTime = dazedTime;
-        health--;
     }
 }

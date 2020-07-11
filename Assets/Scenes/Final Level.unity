@@ -620,8 +620,9 @@ GameObject:
   - component: {fileID: 1777666001}
   - component: {fileID: 1777666003}
   - component: {fileID: 1777666002}
+  - component: {fileID: 1777666004}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Patroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777665998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.88, y: 5.18, z: -0.41618243}
+  m_LocalPosition: {x: 6.28, y: 2.02, z: -0.41618243}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 1336686289}
@@ -759,6 +760,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.40691125, y: 0.83926296}
   m_EdgeRadius: 0
+--- !u!114 &1777666004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777665998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35998486fab921498add9839b0d6561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 3
+  hitEffect: {fileID: 7977633686450568029, guid: 72915d055e1dc864c8368f54e1937c27,
+    type: 3}
+  deathEffect: {fileID: 82711709144547339, guid: e44d8ab358638c845a73202d4d6ae714,
+    type: 3}
+  enemyDamageCooldown: 1.5
 --- !u!1 &2080840326
 GameObject:
   m_ObjectHideFlags: 0
