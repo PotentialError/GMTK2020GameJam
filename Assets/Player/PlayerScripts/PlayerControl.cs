@@ -42,7 +42,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
             */
 
 
-        movement = Input.GetAxis("Horizontal");
+        movement = Input.GetAxisRaw("Horizontal");
         if (WASD)
         {
             if (WEnabled && WPressed)
