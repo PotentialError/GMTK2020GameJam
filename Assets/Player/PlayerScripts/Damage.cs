@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spike_injure : MonoBehaviour
+public class Damage : MonoBehaviour
 {
     public int layer = 8;
     
