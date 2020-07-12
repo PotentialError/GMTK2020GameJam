@@ -9,6 +9,7 @@ public class TurretScript : MonoBehaviour
     public GameObject laser;
     private bool canShoot = true;
     private Animator anim;
+    public GameObject laserEffects;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,11 +40,20 @@ public class TurretScript : MonoBehaviour
         anim.SetBool("fire", true);
         yield return new WaitForSeconds(1.48f);
         anim.SetBool("fire", false);
+        Instantiate(laserEffects, firePoint.position, laserEffects.transform.rotation);
+
         RaycastHit2D detect = Physics2D.Raycast(firePoint.position, firePoint.TransformDirection(Vector2.left), laserDist, LayerMask.GetMask("Player"));
-        
         GameObject laserInstance = Instantiate(laser, firePoint.position, laser.transform.rotation);
-        laserInstance.transform.localScale = new Vector3(detect.distance*100+75,30,1);
-        laserInstance.transform.position -= new Vector3(detect.distance /2+0.375f, 0, 0);
+        if (!detect)
+        {
+            laserInstance.transform.localScale = new Vector3(laserDist * 100 + 75, 30, 1);
+            laserInstance.transform.position -= new Vector3(laserDist / 2 + 0.375f, 0, 0);
+        }
+        else
+        {
+            laserInstance.transform.localScale = new Vector3(detect.distance*100+75,30,1);
+            laserInstance.transform.position -= new Vector3(detect.distance /2+0.375f, 0, 0);
+        }
         StartCoroutine(Reload());
     }
 

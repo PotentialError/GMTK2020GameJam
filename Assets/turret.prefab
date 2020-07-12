@@ -150,6 +150,8 @@ MonoBehaviour:
   firePoint: {fileID: 4502508605519456329}
   laserDist: 5
   laser: {fileID: 119093304647526295, guid: 97bc818215acb8d4cb350d579107646a, type: 3}
+  laserEffects: {fileID: 6166692382475562226, guid: 338d4e93afce3a841b61ba76acb67902,
+    type: 3}
 --- !u!95 &4502508605183989707
 Animator:
   serializedVersion: 3
