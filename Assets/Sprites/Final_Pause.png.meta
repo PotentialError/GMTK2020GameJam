@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: b390c5848a815fb44a5d60af939f7f69
+guid: e0a3324dbf7268e4d98fbb4090479fd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9026291724572952677
-    second: Gun Stand_0
+      213: -9074271231160579072
+    second: Final_Pause_0
   - first:
-      213: -6062748133532686150
-    second: Gun Stand_1
+      213: -118027284638075477
+    second: Final_Pause_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gun Stand_0
+      name: Final_Pause_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 40
-        width: 40
-        height: 35
+        x: 288
+        y: 1253
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b97f7c5ff7b2cb280800000000000000
-      internalID: -9026291724572952677
+      spriteID: 00c802f8466b11280800000000000000
+      internalID: -9074271231160579072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gun Stand_1
+      name: Final_Pause_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 40
-        height: 35
+        x: 288
+        y: 224
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab82f12c1baccdba0800000000000000
-      internalID: -6062748133532686150
+      spriteID: ba5f7595fceac5ef0800000000000000
+      internalID: -118027284638075477
       vertices: []
       indices: 
       edges: []

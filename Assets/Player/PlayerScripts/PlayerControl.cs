@@ -9,14 +9,12 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     public float extra = 0.1f;
 
     public bool WASD = true;
-    public bool WEnabled = true;
-    public bool AEnabled = true;
-    public bool DEnabled = true;
     public bool ShootEnabled = true;
 
     public bool WPressed;
     public bool APressed;
     public bool DPressed;
+    public bool RPressed;
 
     private Rigidbody2D rb;
     public GroundDetection gd;
@@ -24,6 +22,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
 
     public bool isGrounded = false;
     private Animator anim;
+    public bool noGun = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +36,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         WPressed = Input.GetKeyDown(KeyCode.W);
         APressed = Input.GetKeyDown(KeyCode.A);
         DPressed = Input.GetKeyDown(KeyCode.D);
+        RPressed = Input.GetKeyDown(KeyCode.R);
         /*
         if (WPressed)
             Debug.Log("w");
@@ -46,8 +46,11 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
             Debug.Log("d");
             */
 
+        if(WASD)
+            movement = Input.GetAxisRaw("Horizontal");
+        else
+            movement = Input.GetAxisRaw("HorizontalWeird");
 
-        movement = Input.GetAxisRaw("Horizontal");
         if (isGrounded && rb.velocity.y < 0.5f && rb.velocity.y > -0.5f)
         {
             anim.SetBool("isLanded", true);
@@ -74,9 +77,27 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         }
         if (WASD)
         {
-            if (WEnabled && WPressed)
+            if (WPressed)
             {
                 Jump();
+            }
+        }
+        else
+        {
+            if (RPressed)
+            {
+                Jump();
+            }
+        }
+        if(noGun)
+        {
+            if (movement >= -0.1f)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
             }
         }
     }

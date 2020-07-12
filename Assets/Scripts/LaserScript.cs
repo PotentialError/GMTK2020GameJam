@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LaserScript : MonoBehaviour
 {
+    private bool hasKilled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,16 @@ public class LaserScript : MonoBehaviour
 
     IEnumerator StopLaser()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.125f);
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {/*
+        if (!hasKilled&&collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            gameObject.GetComponent<Damage>().kill();
+            hasKilled = true;
+        }
+    */}
 }
