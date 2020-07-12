@@ -25,7 +25,11 @@ public class AudioPlay : MonoBehaviour
         AudioSource[] allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach (AudioSource audioS in allAudioSources)
         {
-            audioS.Stop();
+            if(audioS != audio)
+            {
+                audioS.Stop();
+            }
+
         }
     }
     IEnumerator play()

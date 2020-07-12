@@ -547,6 +547,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100808377394596749, guid: 9863c3860ab560c4a9b259a273596c78,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100808377394596749, guid: 9863c3860ab560c4a9b259a273596c78,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5263158
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100808377394596749, guid: 9863c3860ab560c4a9b259a273596c78,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3100808377394596849, guid: 9863c3860ab560c4a9b259a273596c78,
         type: 3}
       propertyPath: m_Name
@@ -658,7 +673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1414396150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,15 +1220,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 599487937, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6963221620014842480, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.011441
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 6963221620014842480, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6966364
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 6963221620014842480, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
