@@ -8,9 +8,6 @@ TextureImporter:
   - first:
       213: -5778588657661132392
     second: IdleBest_1
-  - first:
-      213: -8686940915832666715
-    second: IdleBest_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,9 +111,9 @@ TextureImporter:
         x: 9
         y: 41
         width: 20
-        height: 38
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,31 +129,10 @@ TextureImporter:
       name: IdleBest_1
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1
-        width: 20
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 891c10d6b345ecfa0800000000000000
-      internalID: -5778588657661132392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IdleBest_2
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 38
-        height: 65
+        width: 21
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a5ccfe2349c17780800000000000000
-      internalID: -8686940915832666715
+      spriteID: 891c10d6b345ecfa0800000000000000
+      internalID: -5778588657661132392
       vertices: []
       indices: 
       edges: []

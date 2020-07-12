@@ -752,10 +752,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911dc443ecbeacf4aab61121d3e99b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalSpawns: 20
+  totalSpawns: 5
+  currentSpawnNum: 0
   thingToSpawn: {fileID: 8040799097991245275, guid: 4338036cf67c9054c8dff76bbc344121,
     type: 3}
-  spawnCooldown: 4
+  spawnCooldown: 6
 --- !u!4 &1159943611
 Transform:
   m_ObjectHideFlags: 0
