@@ -5,20 +5,40 @@ using UnityEngine;
 public class PatrollerSpawnerScript : MonoBehaviour
 {
     public int totalSpawns;
-    private int currentSpawnNum = 0;
+    public int currentSpawnNum = 0;
     public GameObject thingToSpawn;
     public float spawnCooldown;
+    private bool canSpawn = true;
+    private GameObject lastOne;
+    private bool LastOneSpawnedInYet = false;
+    private bool hasSentOutLastDeathYet = false;
     // Start is called before the first frame update
     void Start()
     {
-        currentSpawnNum = totalSpawns;
         StartSpawning(); //this is in case there is an audio clip that should run before it starts spawning or something
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (canSpawn&&currentSpawnNum<totalSpawns-1)
+        {
+            currentSpawnNum += 1;
+            Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation);
+            canSpawn = false;
+            StartCoroutine(spawn());
+        }
+        if (canSpawn)
+        {
+            GameObject lastOne = Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation); 
+            LastOneSpawnedInYet = true;
+        }
+        if (LastOneSpawnedInYet && !hasSentOutLastDeathYet && lastOne == null)
+        {
+            canSpawn = false;
+            Debug.Log("Last dude has died");
+            hasSentOutLastDeathYet = true;
+        }
     }
     public void StartSpawning()
     {
@@ -26,11 +46,7 @@ public class PatrollerSpawnerScript : MonoBehaviour
     }
     IEnumerator spawn()
     {
-        Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation);
         yield return new WaitForSeconds(spawnCooldown);
-        Debug.Log("help");
-        currentSpawnNum += 1;
-        if(!(currentSpawnNum>totalSpawns))
-            StartCoroutine(spawn());
+        canSpawn = true;
     }
 }
