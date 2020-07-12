@@ -10,6 +10,7 @@ public class ElevatorMovement : MonoBehaviour
     public GameObject transition;
     private bool isDetected;
     public float elevatorTime = 3f;
+    public int level;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class ElevatorMovement : MonoBehaviour
         }
         if (transform.position.y >= startTransition)
         {
-            transition.GetComponent<SceneTransition>().LoadNextLevel(2);
+            transition.GetComponent<SceneTransition>().LoadNextLevel(level);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
