@@ -13,12 +13,11 @@ public class AudioPlay : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" && !alreadyPlayed)
+        if(collision.tag == "Player")
         {
             Debug.Log("PLAY");
             sound.Play();
             StopAllAudio();
-            alreadyPlayed = true;
         }
     }
     void StopAllAudio()
@@ -30,7 +29,6 @@ public class AudioPlay : MonoBehaviour
             {
                 audioS.Stop();
             }
-
         }
     }
 }
