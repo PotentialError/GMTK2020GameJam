@@ -37,6 +37,7 @@ public class Damage : MonoBehaviour
         Instantiate(deathEffects, transform.position, deathEffects.transform.rotation);
         transform.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         yield return new WaitForSeconds(0.25f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        transform.position = GlobalData.RespawnPosition;
+        transform.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 }

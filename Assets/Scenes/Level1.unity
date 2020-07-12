@@ -11220,6 +11220,11 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[3].Array.data[23].Y
       value: -119999900
       objectReference: {fileID: 0}
+    - target: {fileID: 5341652849474158407, guid: e5e682fc2c8a88c44856525df5066046,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8744248910491209371, guid: e5e682fc2c8a88c44856525df5066046,
         type: 3}
       propertyPath: m_Name
@@ -15388,7 +15393,7 @@ PrefabInstance:
     - target: {fileID: 599487937, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2257cbd606d35bb45b25b488ba972ec9, type: 3}
+      objectReference: {fileID: 8300000, guid: d11446043c8394a4a94fbd25e409d72f, type: 3}
     - target: {fileID: 3292468223777881212, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
       propertyPath: m_Offset.x
