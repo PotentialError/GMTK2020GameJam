@@ -28,7 +28,7 @@ public class AudioPlay : MonoBehaviour
             if(audioS != sound)
             {
                 audioS.Stop();
-            }
+            } 
         }
     }
 }
