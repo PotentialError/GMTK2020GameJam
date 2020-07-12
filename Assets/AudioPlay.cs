@@ -5,12 +5,19 @@ using UnityEngine;
 public class AudioPlay : MonoBehaviour
 {
     public AudioSource audio;
+    private bool alreadyPlayed;
+    private void Start()
+    {
+        alreadyPlayed = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !alreadyPlayed)
         {
+            Debug.Log("PLAY");
+            play();
             StopAllAudio();
-            audio.Play();
+            alreadyPlayed = true;
         }
     }
     void StopAllAudio()
@@ -18,7 +25,17 @@ public class AudioPlay : MonoBehaviour
         AudioSource[] allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach (AudioSource audioS in allAudioSources)
         {
-            audioS.Stop();
+            if(audioS != audio)
+            {
+                audioS.Stop();
+            }
+
         }
+    }
+    IEnumerator play()
+    {
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        Destroy(this.gameObject);
     }
 }
