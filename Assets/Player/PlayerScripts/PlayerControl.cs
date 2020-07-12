@@ -24,6 +24,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
 
     public bool isGrounded = false;
     private Animator anim;
+    public bool noGun = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,6 +78,17 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
             if (WEnabled && WPressed)
             {
                 Jump();
+            }
+        }
+        if(noGun)
+        {
+            if (movement >= -0.1f)
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
             }
         }
     }
