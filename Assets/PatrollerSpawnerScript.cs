@@ -38,6 +38,7 @@ public class PatrollerSpawnerScript : MonoBehaviour
         {
             GameObject lastOne = Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation); 
             LastOneSpawnedInYet = true;
+            canSpawn = false;
         }
     }
     public void StartSpawning()
