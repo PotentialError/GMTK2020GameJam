@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: 3
-  hitEffect: {fileID: 4402009747264460449, guid: 7973fd3d16041ed4cb4bc771a3f4de78,
+  hitEffect: {fileID: 7977633686450568029, guid: 72915d055e1dc864c8368f54e1937c27,
     type: 3}
-  deathEffect: {fileID: 4487758554004840114, guid: 7bc15c33c17fb6a4cbcc69a06cc5bb7b,
+  deathEffect: {fileID: 82711709144547339, guid: e44d8ab358638c845a73202d4d6ae714,
     type: 3}
-  enemyDamageCooldown: 0.5
+  enemyDamageCooldown: 0.125
