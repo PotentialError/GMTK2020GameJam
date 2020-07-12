@@ -15,7 +15,8 @@ public class AudioPlay : MonoBehaviour
         if(collision.tag == "Player" && !alreadyPlayed)
         {
             Debug.Log("PLAY");
-            play();
+            audio.Play();
+            //play();
             StopAllAudio();
             alreadyPlayed = true;
         }
@@ -36,6 +37,6 @@ public class AudioPlay : MonoBehaviour
     {
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 }

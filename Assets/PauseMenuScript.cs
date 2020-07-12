@@ -15,4 +15,7 @@ public class PauseMenuScript : MonoBehaviour
     {
         
     }
+    public void BackButton(){
+        Debug.Log("TEST");
+    }
 }
