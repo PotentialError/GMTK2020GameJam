@@ -11,13 +11,19 @@ public class AudioPlay : MonoBehaviour
     {
         alreadyPlayed = false;
     }
+    public void finalSound()
+    {
+        Debug.Log("Play2");
+        sound.Play();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.tag == "Player" && !alreadyPlayed)
         {
             Debug.Log("PLAY");
             sound.Play();
             StopAllAudio();
+            alreadyPlayed = true;
         }
     }
     void StopAllAudio()
