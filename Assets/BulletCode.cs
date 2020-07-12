@@ -27,7 +27,7 @@ public class BulletCode : MonoBehaviour
             collision.gameObject.GetComponent<DamageEnemy>().damageEnemy(1);
             
         }
-        if(collision.tag != "Player")
+        if(collision.tag != "Player" && collision.tag != "Respawn")
         {
             Destroy(this.gameObject);
         }
