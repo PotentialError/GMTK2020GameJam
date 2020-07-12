@@ -23,6 +23,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
     public bool isGrounded = false;
     private Animator anim;
     public bool noGun = false;
+    public bool wEnabled = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -77,7 +78,7 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         }
         if (WASD)
         {
-            if (WPressed)
+            if (WPressed && wEnabled)
             {
                 Jump();
             }

@@ -25,11 +25,11 @@ public class Patrol : MonoBehaviour
         RaycastHit2D wallInfo;
         if (movingRight == true)
         {
-            wallInfo = Physics2D.Raycast(detector.position, Vector2.right, 2f, ~LayerMask.GetMask("Player"));
+            wallInfo = Physics2D.Raycast(detector.position, Vector2.right, 1f, ~LayerMask.GetMask("Player"));
         }
         else
         {
-            wallInfo = Physics2D.Raycast(detector.position, Vector2.left, 2f, ~LayerMask.GetMask("Player"));
+            wallInfo = Physics2D.Raycast(detector.position, Vector2.left, 1f, ~LayerMask.GetMask("Player"));
         }
         if (groundInfo == false || wallInfo == true)
         {

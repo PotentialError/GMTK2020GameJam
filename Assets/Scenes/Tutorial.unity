@@ -670,6 +670,11 @@ PrefabInstance:
       propertyPath: noGun
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3100808377394596750, guid: 9863c3860ab560c4a9b259a273596c78,
+        type: 3}
+      propertyPath: wEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3100808377394596849, guid: 9863c3860ab560c4a9b259a273596c78,
         type: 3}
       propertyPath: m_Name
