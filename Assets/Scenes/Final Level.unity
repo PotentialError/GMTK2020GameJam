@@ -450,6 +450,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8235273424288367044, guid: 314d6d8e78a223a4a9c2383503c30b0a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8235273424288367045, guid: 314d6d8e78a223a4a9c2383503c30b0a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -644,6 +649,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8040799097991245249, guid: 4338036cf67c9054c8dff76bbc344121,
+        type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 82711709144547339, guid: e44d8ab358638c845a73202d4d6ae714,
+        type: 3}
+    - target: {fileID: 8040799097991245249, guid: 4338036cf67c9054c8dff76bbc344121,
+        type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 7977633686450568029, guid: 72915d055e1dc864c8368f54e1937c27,
+        type: 3}
     - target: {fileID: 8040799097991245253, guid: 4338036cf67c9054c8dff76bbc344121,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -735,6 +752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911dc443ecbeacf4aab61121d3e99b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalSpawns: 20
+  thingToSpawn: {fileID: 8040799097991245275, guid: 4338036cf67c9054c8dff76bbc344121,
+    type: 3}
+  spawnCooldown: 4
 --- !u!4 &1159943611
 Transform:
   m_ObjectHideFlags: 0
