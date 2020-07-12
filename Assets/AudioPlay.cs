@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioPlay : MonoBehaviour
 {
-    public AudioSource audio;
+    public AudioSource sound;
     private bool alreadyPlayed;
     private void Start()
     {
@@ -12,13 +13,11 @@ public class AudioPlay : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" && !alreadyPlayed)
+        if(collision.tag == "Player")
         {
             Debug.Log("PLAY");
-            audio.Play();
-            //play();
+            sound.Play();
             StopAllAudio();
-            alreadyPlayed = true;
         }
     }
     void StopAllAudio()
@@ -26,17 +25,10 @@ public class AudioPlay : MonoBehaviour
         AudioSource[] allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach (AudioSource audioS in allAudioSources)
         {
-            if(audioS != audio)
+            if(audioS != sound)
             {
                 audioS.Stop();
-            }
-
+            } 
         }
-    }
-    IEnumerator play()
-    {
-        audio.Play();
-        yield return new WaitForSeconds(audio.clip.length);
-        //Destroy(this.gameObject);
     }
 }
