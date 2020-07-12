@@ -92,14 +92,18 @@ public class PlayerControl : MonoBehaviour //more like out of control, am i righ
         }
         if(noGun)
         {
-            if (movement >= -0.1f)
+            if(movement != 0)
             {
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                if (movement > 0)
+                {
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(0, -180, 0);
+                }
             }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-            }
+            
         }
     }
 
