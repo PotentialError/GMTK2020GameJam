@@ -183,6 +183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100808377394596750, guid: 9863c3860ab560c4a9b259a273596c78,
+        type: 3}
+      propertyPath: WEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3100808377394596849, guid: 9863c3860ab560c4a9b259a273596c78,
         type: 3}
       propertyPath: m_Name
@@ -362,20 +367,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 599487937, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0ca121f034205d545b5407537d53daad, type: 3}
-    - target: {fileID: 3292468223777881212, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 3.711227
-      objectReference: {fileID: 0}
-    - target: {fileID: 3292468223777881212, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 10.1099825
-      objectReference: {fileID: 0}
     - target: {fileID: 6963221620014842480, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -791,7 +782,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1c792dc5ab5b6e341a21ee694d42ab2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1115,6 +1106,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 599487937, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 382bb3b9367fa9847a8bf4fd2bee14ab, type: 3}
     - target: {fileID: 6963221620014842480, guid: 0bf8ade5f70638b4ea8dc905d8fb7c03,
         type: 3}
       propertyPath: m_LocalPosition.x

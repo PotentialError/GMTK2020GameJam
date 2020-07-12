@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 599487937}
   m_Layer: 0
   m_Name: AudioCollider
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02109474, y: 2.2570667}
+  m_Offset: {x: 3.711227, y: 2.2570667}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.645339, y: 5.5141335}
+  m_Size: {x: 10.1099825, y: 5.5141335}
   m_EdgeRadius: 0
 --- !u!114 &7426137659064104261
 MonoBehaviour:
@@ -83,7 +83,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e1b092eb63df7d94e8cac84300476792,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 382bb3b9367fa9847a8bf4fd2bee14ab, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0ca121f034205d545b5407537d53daad, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
