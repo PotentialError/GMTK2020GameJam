@@ -6,6 +6,7 @@ public class BulletCode : MonoBehaviour
 {
     public float speed = 20;
     public float damage = 1;
+    public GameObject BulletHitParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +26,11 @@ public class BulletCode : MonoBehaviour
         if (collision.gameObject.layer==11)
         {
             collision.gameObject.GetComponent<DamageEnemy>().damageEnemy(1);
-            
         }
         if(collision.tag != "Player" && collision.tag != "Respawn")
         {
             Destroy(this.gameObject);
+            Instantiate(BulletHitParticles, transform.position, BulletHitParticles.transform.rotation);
         }
 
     }
