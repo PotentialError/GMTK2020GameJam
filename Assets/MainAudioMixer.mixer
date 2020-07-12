@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-4703249906668486228
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 25e82392d5f3ed64aad49fd1819bdbfc
+  m_EffectName: Attenuation
+  m_MixLevel: 24c655a24630dfe4faef29dcc34c1be2
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-4443458561409116419
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Test
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4eff402891772f24f93ba4395624b109
+  m_Children: []
+  m_Volume: 4ba55cd91e93ee74382e217e9cd06438
+  m_Pitch: 95a0200ab0f0b8f46b6bd3c93093bfaf
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -4703249906668486228}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -18,9 +51,12 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: 2e23326b76312cd4587a97a065bc6ed0
     name: MasterVol
+  - guid: 4ba55cd91e93ee74382e217e9cd06438
+    name: TestVol
   m_AudioMixerGroupViews:
   - guids:
     - 98740c801dfbd2c44bbb9f5d889d00cf
+    - 4eff402891772f24f93ba4395624b109
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -33,7 +69,8 @@ AudioMixerGroupController:
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 98740c801dfbd2c44bbb9f5d889d00cf
-  m_Children: []
+  m_Children:
+  - {fileID: -4443458561409116419}
   m_Volume: 2e23326b76312cd4587a97a065bc6ed0
   m_Pitch: 156e757141bfb8d43b32959e18bac965
   m_Send: 00000000000000000000000000000000
@@ -67,5 +104,6 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: b60955559f6a0ab41a449a21b5faa78b
   m_FloatValues:
+    4ba55cd91e93ee74382e217e9cd06438: 0
     2e23326b76312cd4587a97a065bc6ed0: -0.002441872
   m_TransitionOverrides: {}

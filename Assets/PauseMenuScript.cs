@@ -1,21 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PauseMenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public GameObject pauseMenu;
+    public GameObject pauseButton;
+    public AudioMixer AudioMixer;
+    
+    public void BackButton(){
+        pauseMenu.SetActive(false);
+        pauseButton.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void PauseButton(){
+        pauseMenu.SetActive(true);
+        pauseButton.SetActive(false);
     }
-    public void BackButton(){
-        Debug.Log("TEST");
+
+    public void AudioSlider(float volume){
+        
+        AudioMixer.SetFloat("TestVol",Mathf.Log10(volume)*20);
     }
 }
