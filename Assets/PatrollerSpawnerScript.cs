@@ -28,16 +28,16 @@ public class PatrollerSpawnerScript : MonoBehaviour
             canSpawn = false;
             StartCoroutine(spawn());
         }
-        if (canSpawn)
-        {
-            GameObject lastOne = Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation); 
-            LastOneSpawnedInYet = true;
-        }
         if (LastOneSpawnedInYet && !hasSentOutLastDeathYet && lastOne == null)
         {
             canSpawn = false;
             Debug.Log("Last dude has died");
             hasSentOutLastDeathYet = true;
+        }
+        if (canSpawn)
+        {
+            GameObject lastOne = Instantiate(thingToSpawn, transform.position, thingToSpawn.transform.rotation); 
+            LastOneSpawnedInYet = true;
         }
     }
     public void StartSpawning()
