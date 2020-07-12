@@ -18,7 +18,7 @@ public class Shoot : MonoBehaviour
     void Update()
     {
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetKeyDown("e"))
+        if (Input.GetMouseButtonDown(0))
         {
             Shooting();
         }
