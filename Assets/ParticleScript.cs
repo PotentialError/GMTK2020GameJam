@@ -19,6 +19,6 @@ public class ParticleScript : MonoBehaviour
     IEnumerator death()
     {
         yield return new WaitForSeconds(3f);
-        Destroy(this.gameObject);
+        Destroy(this);
     }
 }
