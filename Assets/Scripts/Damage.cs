@@ -24,11 +24,11 @@ public class Damage : MonoBehaviour
     {
         if (collision.gameObject.layer == Spikelayer)
         {
-            StartCoroutine(death());
+            kill();
         }
         if(collision.gameObject.layer == Enemylayer)
         {
-            StartCoroutine(death());
+            kill();
         }
     }
 
@@ -39,5 +39,10 @@ public class Damage : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         transform.position = GlobalData.RespawnPosition;
         transform.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public void kill()
+    {
+        StartCoroutine(death());
     }
 }

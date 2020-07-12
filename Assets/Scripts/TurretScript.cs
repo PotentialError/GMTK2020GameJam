@@ -8,10 +8,11 @@ public class TurretScript : MonoBehaviour
     public float laserDist;
     public GameObject laser;
     private bool canShoot = true;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,7 +36,9 @@ public class TurretScript : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        yield return new WaitForSeconds(3f);
+        anim.SetBool("fire", true);
+        yield return new WaitForSeconds(1.48f);
+        anim.SetBool("fire", false);
         RaycastHit2D detect = Physics2D.Raycast(firePoint.position, firePoint.TransformDirection(Vector2.left), laserDist, LayerMask.GetMask("Player"));
         
         GameObject laserInstance = Instantiate(laser, firePoint.position, laser.transform.rotation);
